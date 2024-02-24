@@ -1,2 +1,22 @@
 import nextcord
 from nextcord ext import commands
+from config import TOKEN, API_KEY
+import aiohttp
+
+bot = commands.Bot(command_prefix="r!weather", intents = nextcord.Intents.all())
+
+@bot.event
+async def on_ready():
+    print("bot has connected to discord")
+
+@bot.command()
+async def weather(cxt: commands.Context, *,city):   
+ url =      Expected ":"
+
+
+
+
+
+
+
+bot.run(TOKEN)
